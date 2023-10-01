@@ -1,0 +1,19 @@
+.header {
+    background: {
+        repeat: no-repeat;
+        size: cover;
+    };
+    min-height: 640px;
+
+    &.is-no-home {
+        min-height: 260px;
+    }
+}
+
+header {
+    margin-bottom: 60px;
+
+    .is-no-home & {
+        margin-bottom: 10px;
+    }
+}

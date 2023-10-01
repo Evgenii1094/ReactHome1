@@ -1,0 +1,46 @@
+.about {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 80px auto 100px;
+    width: 590px;
+
+    &.is-image {
+        margin-bottom: 55px;
+        position: relative;
+        width: 710px;
+
+        &::before {
+            background-color: #000;
+            bottom: -75px;
+            content: '';
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 240px;
+        }
+    }
+
+    &__column {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        &:first-child {
+            margin-right: 85px;
+        }
+    }
+
+    &__descr {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        text-align: center;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
