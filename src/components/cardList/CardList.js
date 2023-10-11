@@ -1,13 +1,12 @@
 import CardItem from '../cardItem/CardItem';
-import CoffeeFilter from '../coffee-filter/CoffeeFilter';
 
-import './../card/card.scss';
+import '../../style/card.scss';
 
 const CardList = (props) => {
-    const elements = props.card.map((item, i) => {
+    const elements = props.card.map((item) => {
         return(
             <CardItem
-                    key={i}
+                    key={item.id}
                     img={item.img}
                     descr={item.descr}
                     country={item.country}
@@ -18,7 +17,7 @@ const CardList = (props) => {
 
     return(
         <>
-            {props.filter ? <CoffeeFilter/> : null}
+            {props.children}
             <ul className="card__list">
                 {elements}
             </ul>

@@ -12,12 +12,12 @@ import '../../style/header.scss';
 
 const OurPleasure = () => {
     const cardArr = [
-        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99'},
-        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Kenya', price: '6.99'},
-        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Columbia', price: '6.99'},
-        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99'},
-        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99'},
-        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99'}
+        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99', id: 1},
+        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Kenya', price: '6.99', id: 2},
+        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Columbia', price: '6.99', id: 3},
+        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99', id: 4},
+        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99', id: 5},
+        {img: card, descr: 'AROMISTICO Coffee 1 kg', country: 'Brazil', price: '6.99', id: 6}
     ]
 
     return(
