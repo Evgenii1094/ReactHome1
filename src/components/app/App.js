@@ -11,7 +11,7 @@ import card1 from '../../resources/card-1.png';
 import card2 from '../../resources/card-2.png';
 import card3 from '../../resources/card-3.png';
 import backgroundImg from '../../resources/main-bg.jpg';
-import './app.scss'
+import './app.scss';
 import '../../style/header.scss';
 import '../../style/card.scss';
 
@@ -32,12 +32,12 @@ class App extends Component {
         return (
             <div className="app">
                 <section 
-                className="header"
-                style={{ backgroundImage: `url('${backgroundImg}')` }}>
+                className="header">
                     <header>
                         <Navigation/>
                     </header>
                     <MainBlock 
+                    img={backgroundImg}
                     title='Everything You Love About Coffee'
                     descr/>
                 </section>

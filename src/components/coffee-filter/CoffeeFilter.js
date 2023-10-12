@@ -3,19 +3,23 @@ import './coffee-filter.scss';
 const CoffeeFilter = (props) => {
 
     const country = [
+        {name: 'All'},
         {name: 'Columbia'},
         {name: 'Brazil'},
         {name: 'Kenya'}
     ];
     const buttons = country.map(({name}) => {
+        const active = props.filter === name;
+        const activeClass = active ? 'is-active' : '';
+
         return(
             <button 
-            className="filter__btn"
+            className={`filter__btn ${activeClass}`}
             type="button"
             key={name}
             onClick={() => props.onFilterSelect(name)}>
                 {name}
-                </button>
+            </button>
         )
     });
     return(

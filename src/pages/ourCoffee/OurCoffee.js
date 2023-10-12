@@ -45,6 +45,8 @@ class OurCoffee extends Component {
 
     filterCoffee = (items, filter) => {
         switch (filter) {
+            case 'All':
+                return items;
             case 'Brazil':
                 return items.filter(item => item.country === 'Brazil');
             case 'Columbia':
@@ -66,12 +68,11 @@ class OurCoffee extends Component {
         return(
             <div className="app">
                 <section 
-                className="header is-no-home"
-                style={{ backgroundImage: `url('${backgroundImg}')` }}>
+                className="header is-no-home">
                     <header>
                         <Navigation/>
                     </header>
-                    <MainBlock title='Our Coffee'/>
+                    <MainBlock img={backgroundImg} title='Our Coffee'/>
                 </section>
                 <About 
                 img

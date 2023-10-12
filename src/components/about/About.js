@@ -10,7 +10,7 @@ const About = (props) => {
         <section className={isImage ? `about ${image}` : 'about'}>
             {img ?
                 <div className="about__column">
-                    <img src={aboutImg} alt="about" />
+                    <img className='about__picture' src={aboutImg} alt="about" />
                 </div> : null
             }
             <div className="about__column">

@@ -23,12 +23,11 @@ const OurPleasure = () => {
     return(
         <div className="app">
             <section 
-            className="header is-no-home"
-            style={{ backgroundImage: `url('${backgroundImg}')` }}>
+            className="header is-no-home">
                 <header>
                     <Navigation/>
                 </header>
-                <MainBlock title='For your pleasure'/>
+                <MainBlock img={backgroundImg} title='For your pleasure'/>
             </section>
             <About 
             img

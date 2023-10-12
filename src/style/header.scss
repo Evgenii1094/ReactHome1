@@ -7,11 +7,35 @@
 
     &.is-no-home {
         min-height: 260px;
+
+        @media only screen and (max-width: 1279px) {
+            min-height: 200px;
+        }
+
+        @media only screen and (max-width: 767px) {
+            min-height: 180px;
+        }
+    }
+
+    @media only screen and (max-width: 1279px) {
+        min-height: 430px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        min-height: 410px;
     }
 }
 
 header {
     margin-bottom: 60px;
+
+    @media only screen and (max-width: 1279px) {
+        margin-bottom: 30px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        margin-bottom: 10px;
+    }
 
     .is-no-home & {
         margin-bottom: 10px;

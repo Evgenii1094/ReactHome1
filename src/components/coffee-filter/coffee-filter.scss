@@ -4,11 +4,33 @@
     padding: 0 55px;
     margin-bottom: 60px;
 
+    @media only screen and (max-width: 1279px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 0 20px;
+    }
+
+    &__item:not(:last-child) {
+        @media only screen and (max-width: 1279px) {
+            margin-bottom: 25px;
+        } 
+    }
+
     &__title {
         color: #000;
         font-size: 14px;
         font-weight: 400;
         margin-right: 25px;
+
+        @media only screen and (max-width: 767px) {
+            display: block;
+            text-align: center;
+            margin: 0 0 15px;
+        }
 
         &.is-cursor {
             cursor: pointer;
@@ -46,8 +68,10 @@
             margin-right: 0;
         }
 
-        &:hover {
-            transform: translateY(-10px);
+        &:hover,
+        &.is-active {
+            background-color: #000;
+            color: #fff;
         }
     }
 }

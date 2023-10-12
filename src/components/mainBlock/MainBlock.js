@@ -5,6 +5,9 @@ const MainBlock = (props) => {
     if (props.descr) {
         return (
             <div className="main-block">
+                <picture className='main-block__picture'>
+                    <img src={props.img} alt="main-pict" />
+                </picture>
                 <h1 className='main-block__title'>{props.title}</h1>
                 <CoffeeDecor white name/>
                 <p className="main-block__descr">
@@ -17,6 +20,9 @@ const MainBlock = (props) => {
     } else {
         return(
             <div className="main-block">
+                <picture className='main-block__picture'>
+                    <img src={props.img} alt="main-pict" />
+                </picture>
                 <h1 className='main-block__title'>{props.title}</h1>
             </div>
         )
