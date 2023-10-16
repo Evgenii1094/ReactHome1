@@ -4,10 +4,9 @@ import CoffeeDecor from '../coffeeDecor/CoffeeDecor';
 import './about.scss';
 
 const About = (props) => {
-    const {img, descrFirst, descrSecond, title, aboutImg, isImage} = props;
-    const image = 'is-image';
+    const {img, descrFirst, descrSecond, title, aboutImg, classImage} = props;
     return(
-        <section className={isImage ? `about ${image}` : 'about'}>
+        <section className={img ? `about ${classImage}` : 'about'}>
             {img ?
                 <div className="about__column">
                     <img className='about__picture' src={aboutImg} alt="about" />
@@ -18,6 +17,7 @@ const About = (props) => {
                 <CoffeeDecor/>
                 <p className="about__descr">{descrFirst}</p>
                 <p className="about__descr">{descrSecond}</p>
+                {props.children}
             </div>
         </section>
     )

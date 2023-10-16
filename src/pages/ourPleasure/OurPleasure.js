@@ -32,7 +32,7 @@ const OurPleasure = () => {
             <About 
             img
             title='About our beans'
-            isImage
+            classImage='is-image'
             aboutImg={about}
             descrFirst='Extremity sweetness difficult behaviour he of. On disposal 
             of as landlord horrible.'

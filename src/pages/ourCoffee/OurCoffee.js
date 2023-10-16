@@ -76,8 +76,8 @@ class OurCoffee extends Component {
                 </section>
                 <About 
                 img
+                classImage='is-image'
                 title='About our beans'
-                isImage
                 aboutImg={about}
                 descrFirst='Extremity sweetness difficult behaviour he of. On disposal 
                 of as landlord horrible.'
